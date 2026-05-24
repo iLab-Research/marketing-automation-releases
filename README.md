@@ -1,9 +1,8 @@
 # marketing-automation-releases
 
-**Marketing Automation Desktop** 의 distribution repo. 소스코드는 private repo
-[`iLab-Research/marketing-automation`](https://github.com/iLab-Research/marketing-automation)
-에 있고, 본 repo 는 빌드된 desktop 설치 파일 (.dmg / setup.exe) 과 Tauri
-자동 업데이트 manifest (`latest.json`) 를 호스팅한다.
+**Marketing Automation Desktop** 의 distribution channel. 빌드된 desktop 설치
+파일 (.dmg / setup.exe) 과 Tauri 자동 업데이트 manifest (`latest.json`) 를
+호스팅한다.
 
 [**최신 릴리스 보기**](https://github.com/iLab-Research/marketing-automation-releases/releases/latest)
 
@@ -137,13 +136,3 @@ PyInstaller 로 묶인 sidecar 가 시작 안 된 상황. 일반적으로:
   [이 repo 의 Releases 페이지](https://github.com/iLab-Research/marketing-automation-releases/releases)
   뿐이다.
 
----
-
-## 6. 운영자 메모
-
-내부 운영자용 정보 (소스 repo 접근 가능):
-
-- 새 릴리스는 source repo 에서 `make desktop-release` 로 트리거.
-- self-hosted runner (Windows + macOS + Linux 풀) 가 빌드 후 본 repo 에 draft
-  release 생성. 운영자가 검토 후 manual publish.
-- 자세한 release 절차: [source repo `docs/runbook/desktop-release.md`](https://github.com/iLab-Research/marketing-automation/blob/main/docs/runbook/desktop-release.md).
